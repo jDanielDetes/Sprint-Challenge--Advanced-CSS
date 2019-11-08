@@ -176,6 +176,14 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
+  list-style-type: none;
+}
+.nav-div .navbar a {
+  text-decoration: none;
+  color: black;
+}
+.nav-div .navbar a:hover {
+  color: white;
 }
 .nav-div .navbar .nav-item {
   padding: 10px 0px;
@@ -183,6 +191,31 @@ p {
 }
 .nav-div .navbar h1 {
   font-size: 3rem;
+}
+.nav-div .navbar .animate {
+  text-transform: uppercase;
+  font: bold 26vmax/0.8 Open Sans, Impact;
+  background: black;
+  color: white;
+  mix-blend-mode: multiply;
+  display: inline;
+}
+@keyframes stripes {
+  to {
+    background-size: 100% 100%;
+  }
+}
+h1,
+h2,
+h3 {
+  background: black;
+}
+h1,
+h2,
+h3 {
+  background: linear-gradient(black, white) no-repeat 0 0;
+  background-size: 0 100%;
+  animation: stripes 3s linear infinite;
 }
 footer {
   color: #22283B;

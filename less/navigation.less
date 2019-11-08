@@ -10,18 +10,50 @@ background-color:@border-real;
     .nav-links{
         .flex-center();
         font-size: 1.6rem;
-       
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color: white;
+        }
     }
     .nav-item{
         padding: 10px 0px;
         margin: 0 0 0px 20px;
+        
+        
     }
 
     h1{
         font-size: 3rem;
     }
     
-   
+   .animate{
+    text-transform: uppercase;
+    font: bold 26vmax/.8 Open Sans, Impact;
+    background: black;
+    color: white;
+    mix-blend-mode: multiply;
+    display: inline;
+   }
     
 }
 }
+
+@keyframes stripes {
+    to {
+      background-size:100% 100%;
+    }
+  }
+  
+  h1,  h2, h3 {
+    background: black;
+  }
+  
+ h1 ,h2,h3 {
+    background: linear-gradient( black , white) no-repeat 0 0;
+    background-size: 0 100%;
+    animation: stripes 3s linear infinite;
+  }
