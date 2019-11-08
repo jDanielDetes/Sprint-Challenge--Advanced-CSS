@@ -24,6 +24,9 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
@@ -48,6 +51,12 @@
 
     .walk-text {
       width: 50%;
+      
+      @media @phone{
+        width: 100%;
+        padding-top: 20px;
+      }
+
 
       h3 {
         margin-bottom: 10px;
@@ -64,13 +73,27 @@
         display: inline-block;
         background-color: @btn-bg-color;
         color:@porcelain ;
-      
+        
+          &:hover{
+            color: @btn-bg-color;
+            background-color: @porcelain;
+          }
+          @media @phone{
+            display: flex;
+          justify-content: center;
+          }
       }
+      
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone{
+          width: 100%;
+      }
+        
+      }
       
       img {
         width: 100%;
@@ -79,4 +102,22 @@
       }
     }
   }
-}// home
+// home
+
+//mobile
+@media @phone {
+
+.sky{
+  display: none;
+}
+
+.launch{
+  display: none;
+}
+.walk{
+  display: flex;
+  flex-direction:column-reverse ;
+  }
+}
+
+
